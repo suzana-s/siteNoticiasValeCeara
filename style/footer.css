@@ -1,0 +1,34 @@
+.footer {
+    background-color: rgb(128, 7, 7);
+    margin-top: 60px;
+}
+
+.container-footer {
+    width: 90%;
+    margin: auto;
+    color: #fff;
+}
+
+.footer-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-main > a {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.footer-main img {
+    width: 360px;
+}
+
+.footer-main p {
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+
+.footer-main p a {
+    color: bisque;
+}

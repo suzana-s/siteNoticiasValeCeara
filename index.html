@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/slider.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/noticiasmain.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/mobile.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="flex-header">
+                <nav>
+                    <div class="header-nav">
+                        <a href="#">
+                            <img src="assets/img/facebook.png" alt="facebook">
+                        </a>
+                        <a href="#">
+                            <img src="assets/img/instagram.png" alt="instagram">
+                        </a>
+                        <a href="#">
+                            <img src="assets/img/twitter.png" alt="twitter">
+                        </a>
+                    </div>
+                    <div>
+                        <div class="search-bar" id="search">
+                            <input type="text" placeholder="digite aqui">
+                            <button class="btn"><img src="assets/img/pesquisaBlack.svg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="mobile-menu">
+                        <img src="assets/img/menu.svg" alt="">
+                    </div>
+                </nav>
+            </div>
+            <div class="logo">
+                <img src="assets/img/logo.png" alt="" width="300px">
+            </div>
+            <div class="search-nav">
+                <div class="category-link">
+                    <div class="menu-search">
+                        <img src="assets/img/menuwhite.svg" alt="">
+                    </div>
+                    <h3 id="menu">MENU</h3>
+                    <div class="list-search filtro">
+                        
+                            <h3 onclick="filtrarCards('ceara')">CEARÁ</h3>
+        
+                            <h3 onclick="filtrarCards('brasil')">BRASIL</h3>
+                    
+                            <h3 onclick="filtrarCards('mundo')">MUNDO</h3>
+                        
+                            <h3 onclick="filtrarCards('cidades')">CIDADES</h3>
+                       
+                            <h3 onclick="filtrarCards('politica')">POLÍTICA</h3>
+                        
+                            <h3 onclick="filtrarCards('automoveis')">AUTOMÓVEIS</h3>
+                        
+                            <h3 onclick="filtrarCards('sociedade')">SOCIEDADE</h3>
+                        
+                            <h3 onclick="filtrarCards('gastronomia')">GASTRONOMIA</h3>
+                       
+                    
+                    </div>
+                </div>
+                <div>
+                    <a href="#search">
+                        <div class="img">
+                        </div>
+                    </a>
+                </div>
+            
+            </div>
+        </header>
+        <main class="mainCardsNoticias">
+            <div id="cardsContainer" class="cards"></div>
+            <section class="flex-noticias-main">
+                <div class="slider-info">
+                    <div class="slide-track">
+                    </div>
+                </div>
+            </section>
+            <section id="noticias">
+                <ul class="slides">
+                    <div class="slider"></div>
+                </ul>
+                <div class="ultimas-noticias">
+
+                    <h3>Últimas Notícias</h3>
+                </div>
+
+                <div class="siga-nos">
+                    <h2>Siga-nos nas redes sociais</h2>
+                    <p>Fique por dentro de todas as notícias em tempo real!</p>
+                    <img src="assets/img/facebook.png" alt="facebook">
+                    <img src="assets/img/instagram.png" alt="">
+                </div>
+
+            </section>
+            <section class="categorias">
+                <div>
+                    <h3>
+                        <span>BRASIL</span>
+                    </h3>
+                    <ul class="noticiasMain" id="brasilCards">
+                    </ul>
+                    <a href="#menu">Veja outras materias dessa categoria ➝</a>
+                </div>
+                <div>
+                    <h3> 
+                        <span>
+                            CEARÁ
+                        </span>
+                    </h3>
+                    <ul id="cearaCards">
+                    </ul>
+                    <a href="#menu">Veja outras materias dessa categoria ➝</a>
+                </div>
+                <div>
+                    <h3>
+                        <span>CIDADES</span>
+                    </h3>
+                    <ul id="cidadesCards">
+                    </ul>
+                    <a href="#menu">Veja outras materias dessa categoria ➝</a>
+                </div>
+                <div>
+                    <h3>
+                        <span>POLÍTICA</span>
+                    </h3>
+                    <ul id="politicaCards">
+                    </ul>
+                    <a href="#menu">Veja outras materias dessa categoria ➝</a>
+                </div>
+                <div>
+                    <h3>
+                        <span>DIREITO</span>
+                    </h3>
+                    <ul id="direitoCards">
+                    </ul>
+                    <a href="#menu">Veja outras materias dessa categoria ➝</a>
+                </div>
+                <div>
+                    <h3>
+                        <span>MUNDO</span>
+                    </h3>
+                    <ul id="mundoCards">
+                    </ul>
+                        <a href="#menu">Veja outras materias dessa categoria ➝</a>
+                </div>
+                <div>
+                    <h3> 
+                        <span>
+                            AUTOMOVEIS
+                        </span>
+                    </h3>
+                    <ul id="automoveisCards">
+                    </ul>
+                    <a href="#menu">Veja outras materias dessa categoria ➝</a>
+                </div>
+                <div>
+                    <h3> 
+                        <span>
+                           SOCIEDADE
+                        </span>
+                    </h3>
+                    <ul id="sociedadeCards">
+                    </ul>
+                    <a href="#menu">Veja outras materias dessa categoria ➝</a>
+                </div>
+                <div>
+                    <h3> 
+                        <span>
+                            GASTRONOMIA
+                        </span>
+                    </h3>
+                    <ul id="gastronomiaCards">
+                    </ul>
+                    <a href="#menu">Veja outras materias dessa categoria ➝</a>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-main">
+                <img src="assets/img/logo.png" alt="">
+                <a href="">Anucie aqui</a>
+                <span>TV Vale Ceará © Todos os direitos reservados - 2023</span>
+                <p>Desenvolvido por <a href="">@Suzana</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="assets/js/nav.js"></script>
+    <script src="assets/js/noticiasSlider.js"></script>
+    <script src="assets/js/filterMain.js"></script>
+    <script src="assets/js/filterCategoria.js"></script>
+    <script src="assets/js/search.js"></script>
+    
+   
+</body>
+</html>

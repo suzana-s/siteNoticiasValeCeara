@@ -1,0 +1,119 @@
+.slider-info {
+    border: 1px solid #BD0D10;
+    margin: 30px auto;
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.slider-info .slide-track{
+    display: flex; 
+    animation: scroll 40s linear infinite;
+    width: calc(500px * 10);
+    -webkit-animation: scroll 30s linear infinite;
+    gap: 50px;
+}
+
+.slide-info {
+    display: flex;
+    justify-self: unset;
+    align-items: center;
+    gap: 10px;
+}
+
+.slide-info h5 {
+    display: inline;
+    font-size: 0.8rem;
+    background-color: #B02B33;
+    color: #fff;
+    padding: 8px 10px;
+    width: max-content;
+    height: max-content;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.slider-info .slide-info  p{
+    width: max-content;
+    font-size: 1.1rem;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(calc(-200px * 10));
+        transform: translateX(calc(-200px * 10));
+    }
+}
+
+
+/* CARROSEL  */
+
+
+
+.slider {
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    width: 600px;
+    height: 40%;
+}
+
+.slider img {
+    width: 431px;
+    height: 265px;
+    -webkit-user-drag: none;
+    margin: auto;
+}
+
+.slider button {
+    color: black;
+}
+
+.slider span {
+    color: #B22B33;
+    margin: 10px;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+
+.slider p {
+    margin-top: 10px;
+    font-size: 0.875rem;
+    padding: 0px 25px;
+    line-height: 25.2px;
+}
+
+.slider h2 {
+    font-size: 1.75rem;
+    
+}
+
+.slick-prev,
+.slick-next {
+  background-color: #333;
+  color: rgb(22, 22, 22);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: #555;
+}
+
+
+
+
+
+

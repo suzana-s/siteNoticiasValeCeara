@@ -1,0 +1,191 @@
+.container-header {
+    width: 90%;
+    margin: auto
+}
+
+
+.nav-header-desk ul{
+    text-decoration: none;
+    color: rgb(70, 69, 69);
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-header-desk ul li a {
+    text-decoration: none;
+    color: rgb(70, 69, 69);
+}
+
+.nav-header-desk a:hover {
+    color: #B5565A;
+}
+
+.nav-button {
+    border: 0;
+    border-radius: 4px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.nav-button {
+    background-color: transparent;
+}
+
+.nav-button img {
+    width: 28px;
+}
+
+
+.overlay {
+    width: 0;
+    height: 100%;
+    background-color: #093969;
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+
+.overlay a {
+    color: #CED7E1;
+}
+
+.overlay .closeBtn {
+    font-size: 2rem;
+    margin-left: 85%;
+}
+
+
+.header-nav a {
+    text-decoration: none;
+}
+
+.header-nav a img{
+    width: 32px;
+    margin-left: 5px;
+}
+
+.flex-header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(206, 204, 204,0.5);
+    padding: 10px;
+}
+
+.flex-header .mobile {
+    display: none;
+}
+
+.logo {
+    text-align: center;
+    margin: 30px;
+}
+
+#category {
+    width: 0;
+    height: 100%;
+    background-color: #093969;
+    z-index: 9;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: all 0.5s;
+    background-color: #093969;
+}
+
+#category a {
+    color: #CED7E1;
+}
+
+.search-nav {
+    background-color: #BD0D10;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.search-nav div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.search-nav div button {
+    background-color: transparent;
+    border: none;
+}
+
+.search-nav .mobile {
+    display: none;
+}
+
+.category-link {
+    margin-left: 20px;
+}
+
+.category-link a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-size: 1.125rem;
+    margin-left: 14px;
+}
+
+.search-nav .img {
+    cursor: pointer;
+    padding: 20px;
+    background-image: url(/assets/img/pesquisa.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.search-nav .img:hover {
+    background-image: url(/assets/img/pesquisaBlack.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.7s;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.menu-search img{
+    cursor: pointer;
+    display: none;
+}
+
+
+
+.search-bar input{
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 1px solid #bd0d109d;
+}
+
+.search-bar button {
+    padding: 6px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+.search-bar button img {
+    width: 12px;
+}
+
+.search-bar {
+    opacity: 0.2;
+}
+
+.displaySearch {
+    opacity: 1;
+}
