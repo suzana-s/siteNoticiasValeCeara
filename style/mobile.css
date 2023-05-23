@@ -1,5 +1,4 @@
-@media (max-width: 1200px) {
-    
+@media (max-width: 1200px) {    
     .flex-header nav {
         flex-direction: column;
         gap: 10px;
@@ -46,73 +45,6 @@
 @media (max-width: 525px){
     body {
         overflow-x: hidden;
-    }
-
-    .menu-search img {
-        display: block;
-    }
-    
-	.nav-list{
-        position: absolute;
-        top: 9vh;
-        right: 0;
-        width: 100vw;
-        height: 100vh;
-        background: #093969;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        z-index: 1;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
-    } 
-     
-    .nav-list.active {
-        transform: translateX(0%);
-    }
-    
-    .nav-list.active li {
-        margin-top: 10px;
-    }
-
-    .nav-list.active a{
-        color: #fff;
-        border-bottom: 1px solid #083159;
-        padding: 4px;
-        text-transform: uppercase;
-        font-size: small;
-        
-    }
-
-    .nav-list li:hover {
-        color: #d2deeb;
-    }
-
-
-    .list-search {
-        position: absolute;
-        top: 76vh;
-        right: 20px;
-        width: 92.2%;
-        height: 100vh;
-        background: #093969;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        z-index: 1;
-        transform: translateX(110%);
-        transition: transform 0.3s ease-in;
-    }
-
-    .list-search a {
-        border-bottom: 1px solid #083159;
-        padding: 4px;
-    }
-
-    .list-search.active {
-        transform: translateX(0%);
     }
 
     #noticias {

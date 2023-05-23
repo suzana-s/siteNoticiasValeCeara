@@ -4,10 +4,17 @@
     box-sizing: border-box;
     outline: 0;
     font-family: 'Merriweather Sans', sans-serif;
+
+
+    --color-primary: #bd0d10;
+    --color-secondary: rgb(70, 69, 69);
+    --color-tertiary: #c20307e1;
+    
 }
 
 body {
     background-color: #FBFBFB;
+    margin-top: 0px;
 }
 
 .container {

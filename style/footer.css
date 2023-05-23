@@ -1,6 +1,7 @@
 .footer {
-    background-color: rgb(128, 7, 7);
+    background-color:black;
     margin-top: 60px;
+    padding: 20px;
 }
 
 .container-footer {

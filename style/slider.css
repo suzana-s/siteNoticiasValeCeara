@@ -1,11 +1,11 @@
 .slider-info {
-    border: 1px solid #BD0D10;
     margin: 30px auto;
     height: auto;
-    width: 100%;
+    width: 70%;
     border-radius: 5px;
     overflow: hidden;
     padding: 10px;
+    margin-top: -70px;
 }
 
 .slider-info .slide-track{
@@ -55,7 +55,10 @@
 
 /* CARROSEL  */
 
-
+.slides { 
+    padding: 5px 10px;
+    border-radius: 6px;
+}
 
 .slider {
     padding: 20px;
@@ -96,22 +99,13 @@
     
 }
 
-.slick-prev,
-.slick-next {
-  background-color: #333;
-  color: rgb(22, 22, 22);
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  font-size: 20px;
-  line-height: 40px;
+button.slick-prev.slick-arrow::before {
+    color: black;
 }
 
-.slick-prev:hover,
-.slick-next:hover {
-  background-color: #555;
+button.slick-next.slick-arrow::before {
+    color: black;
 }
-
 
 
 
