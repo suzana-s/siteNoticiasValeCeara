@@ -21,6 +21,7 @@
     justify-self: unset;
     align-items: center;
     gap: 10px;
+    background-color: #B02B33;
 }
 
 .slide-info h5 {
