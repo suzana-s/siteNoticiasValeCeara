@@ -1,9 +1,11 @@
 #noticias {
     display: flex;
+    justify-content: center;
+    gap: 120px;
 }
 
 .ultimas-noticias{
-    width: 39.65%;
+    width: 40%;
 }
 
 .ultimas-noticias h3{

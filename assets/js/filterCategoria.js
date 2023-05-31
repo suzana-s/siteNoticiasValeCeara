@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
             img.src = card.img
             p.innerText = card.paragraph
             span.innerText = card.date
-            cardElement.append(img, linkElement, p, span)
+            cardElement.append(img, linkElement, span, p)
     
     
     

@@ -1,11 +1,11 @@
 .slider-info {
     margin: 30px auto;
     height: auto;
-    width: 70%;
+    width: 100%;
     border-radius: 5px;
     overflow: hidden;
     padding: 10px;
-    margin-top: -70px;
+    margin-top: -50px;
 }
 
 .slider-info .slide-track{
@@ -21,7 +21,7 @@
     justify-self: unset;
     align-items: center;
     gap: 10px;
-    background-color: #B02B33;
+    background-color: var(--color-logo);
 }
 
 .slide-info h5 {
@@ -39,6 +39,7 @@
 .slider-info .slide-info  p{
     width: max-content;
     font-size: 1.1rem;
+    color: #fff;
 }
 
 @keyframes scroll {
@@ -59,6 +60,7 @@
 .slides { 
     padding: 5px 10px;
     border-radius: 6px;
+    width: 50%;
 }
 
 .slider {

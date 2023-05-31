@@ -277,10 +277,11 @@ nav .header-nav img{
 .banner {
     display: flex;
     justify-content: center;
+    background-color: black;
+    padding-bottom: 40px;
 }
 
 .banner img {
-    width: 70%;
-    height: 50%;
+    width: 30%;
 }
 

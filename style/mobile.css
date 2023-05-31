@@ -1,6 +1,5 @@
 @media (max-width: 1200px) {    
     .flex-header nav {
-        flex-direction: column;
         gap: 10px;
     }
 
@@ -80,6 +79,12 @@
     }
 }
 
+@media (max-width:397px) {
+    .flex-header nav {
+        flex-direction: column;
+    }
+
+}
 
 @media (max-width:380px) {
 
